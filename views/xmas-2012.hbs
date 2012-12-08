@@ -15,8 +15,6 @@
         padding-bottom: 40px;
       }
 
-      h1 { font-size: 85%; }
-
       /* Custom container */
       .container-narrow {
         margin: 0 auto;
@@ -179,10 +177,12 @@
 
       <script src="/javascripts/jquery-1.8.3.min.js"></script>
       <script src="/javascripts/jquery.fitvids.js"></script>
+      <script src="jquery.fittext.js"></script>
       <script>
         $(document).ready(function(){
           // Target your .container, .wrapper, .post, etc.
           $(".jumbotron").fitVids();
+          $(".jumbotron").fitText();
         });
       </script>
     </div> <!-- /container -->
