@@ -10,22 +10,23 @@
     <!-- Le styles -->
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
+      body, html { padding: 0; margin: 0 }
 
       /* Custom container */
+      .color { margin: 0; padding: 5px; }
+      .red { background: #990900; color: white; }
+      .green { background: #336633; color: white }
+      .yellow { background: #FFFF99; color: black; }
+      .brown { background: #996633; }
+
       .container-narrow {
         margin: 0 auto;
         max-width: 700px;
       }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
 
       /* Main marketing message and sign up button */
       .jumbotron {
+        padding-top: 20px;
         margin: 60px 0;
         text-align: center;
       }
@@ -36,23 +37,20 @@
         width: 100%;
       }
       .jumbotron div {
-        margin: 8px;
-        padding: 4px;
-      }
-      .jumbotron img {
-        margin: 5px;
+        padding: 6px;
       }
 
       /* Supporting marketing content */
       .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
+        padding: 60px 0;
       }
 
-      .list h4, p {
-        text-align: center;
+      #pictures p {
+        text-align: left;
+      }
+
+      .footer {
+        padding-bottom: 40px;
       }
 
     </style>
@@ -71,112 +69,123 @@
     <link rel="apple-touch-icon-precomposed" href="/images/xmas_tree/57.png">
   </head>
 
-  <body>
-
-    <div class="container-narrow">
+  <body class="color red">
       <div class="jumbotron">
-        <h1>Merry Christmas!</h1>
-        <br />
-        <br />
-        <iframe width="640" height="360" src="http://www.youtube.com/embed/h4EK2bskN3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+        <div class="container-narrow">
+          <h1>Merry Christmas!</h1>
+          <br />
+          <br />
+          <iframe width="640" height="360" src="http://www.youtube.com/embed/h4EK2bskN3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
-      <hr>
+      <div class="color green">
 
-      <div class="row-fluid marketing">
-        <div class="span3">
-          <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-          <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
-        </div>
-        
-        <div class="span6 list">
+        <div class="container-narrow">
           <h4>Our Top Five Videos</h4>
           <p>Our favorite videos of 2012.</p>
-          <ol>
-            <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=WA4iX5D9Z64">Taylor Swift - Never Getting Back Together</a></li>
-            <li><a href="https://www.youtube.com/watch?list=FLdRZMPbNDDL7MZWET3fk5Ig&feature=player_detailpage&v=Z447qc4ZRRA">We Are Never Ever Gunna Win With Andy</a></li>
-            <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=R4em3LKQCAQ">Justin Bieber - As Long as You Love Me</a></li>
-            <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=-qTIGg3I5y8&list=FLdRZMPbNDDL7MZWET3fk5Ig">Cookie Monster - Share It Maybe</a></li>
-            <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=-qTIGg3I5y8&list=FLdRZMPbNDDL7MZWET3fk5Ig">Hot Cheetos & Takis</a></li>
-          </ol>
-        </div>
-        
-        <div class="span3">
-          <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-          <p><small>Kayla and Mom at Walt Disney World.</small></p>
-        </div>
 
-      </div>
+          <div class="row-fluid marketing">
+            <div class="span3">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
+              <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+            </div>
 
-      <hr>
+            <div class="span6 list">
+              <ol>
+                <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=WA4iX5D9Z64">Taylor Swift - Never Getting Back Together</a></li>
+                <li><a href="https://www.youtube.com/watch?list=FLdRZMPbNDDL7MZWET3fk5Ig&feature=player_detailpage&v=Z447qc4ZRRA">We Are Never Ever Gunna Win With Andy</a></li>
+                <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=R4em3LKQCAQ">Justin Bieber - As Long as You Love Me</a></li>
+                <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=-qTIGg3I5y8&list=FLdRZMPbNDDL7MZWET3fk5Ig">Cookie Monster - Share It Maybe</a></li>
+                <li><a href="https://www.youtube.com/watch?feature=player_detailpage&v=-qTIGg3I5y8&list=FLdRZMPbNDDL7MZWET3fk5Ig">Hot Cheetos & Takis</a></li>
+              </ol>
+            </div>
 
-      <div class="row-fluid marketing">
-        <div class="span3">
-          <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-          <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
-        </div>
-        
-        <div class="span6 list">
+            <div class="span3">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
+              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+            </div>
+          </div>
+
           <h4>Our Top Five Web Sites</h4>
           <p>We had the most fun this year wasting time on these web sites.</p>
-          <ol>
-            <li><a href="http://www.jibjab.com/">Jib Jab</a></li>
-            <li><a href="http://www.lego.com/">Lego</a></li>
-            <li><a href="http://www.barbie.com/">Barbie</a></li>
-            <li><a href="http://www.sesamestreet.org/games">Sesame Street Games</a></li>
-            <li><a href="http://video.disney.com/shows/wheres-my-water-4c886a2dc7577196f90dc16c">Swampy's Underground Adventures</a></li>
-          </ol>
-        </div>
-        
-        <div class="span3">
-          <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-          <p><small>Kayla and Mom at Walt Disney World.</small></p>
+
+          <div class="row-fluid marketing">
+            <div class="span3">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
+              <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+            </div>
+
+            <div class="span6 list">
+              <ol>
+                <li><a href="http://www.jibjab.com/">Jib Jab</a></li>
+                <li><a href="http://www.lego.com/">Lego</a></li>
+                <li><a href="http://www.barbie.com/">Barbie</a></li>
+                <li><a href="http://www.sesamestreet.org/games">Sesame Street Games</a></li>
+                <li><a href="http://video.disney.com/shows/wheres-my-water-4c886a2dc7577196f90dc16c">Swampy's Underground Adventures</a></li>
+              </ol>
+            </div>
+
+            <div class="span3">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
+              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+            </div>
+          </div>
         </div>
 
       </div>
 
-      <hr />
+      <div id="pictures" class="row-fluid yellow">
+        <div class="container-narrow">
+          <div class="span12">
+            <h3>Our Favorite Memories of 2012</h3>
+            <p>We had lots of fun this year, but a fw moments stick out.</p>
 
-      <div class="row-fluid marketing jumbotron">
-        <div class="span12">
-          <h3>Our Favorite Memories of 2012</h3>
-          <p>We had lots of fun this year, but a fw moments stick out.</p>
+            <div class="row-fluid">
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
+                <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+              </div>
 
-          <div>
-            <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-            <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8322/8045539654_96c858e438.jpg" />
+                <p><small>Lindsey in Walt Disney World.</small></p>
+              </div>
+
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
+                <p><small>Kayla and Mom at Walt Disney World.</small></p>
+              </div>
+
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+                <p><small>Hiking the McKaig trail.</small></p>
+              </div>
+
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+                <p><small>Hiking the McKaig trail.</small></p>
+              </div>
+
+              <div class=span3>
+                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+                <p><small>Hiking the McKaig trail.</small></p>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <img class="img-polaroid" src="http://farm9.staticflickr.com/8322/8045539654_96c858e438.jpg" />
-            <p><small>Lindsey in Walt Disney World.</small></p>
-          </div>
-
-          <div>
-            <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-            <p><small>Kayla and Mom at Walt Disney World.</small></p>
-          </div>
-
-          <div>
-            <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-            <p><small>Hiking the McKaig trail.</small></p>
-          </div>
-
-          <!-- <img class="img-polaroid" src="" /> -->
         </div>
       </div>
 
-      <hr>
-
-      <div class="footer">
-        <p>&copy; KayLou 2012</p>
-        <p>Graciously hosted by <a href='/'>Dad</a> and build with help from the following tools:</p>
-        <ul>
-          <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
-          <li><a href="http://www.gettyicons.com/free-icon/101/christmas-icon-set/">Icon Shock Christmas Set</a></li>
-        </ul>
+      <div class="footer brown">
+        <div class="container-narrow">
+          <p>&copy; KayLou 2012</p>
+          <p>Graciously hosted by <a href='/'>Dad</a> and build with help from the following tools:</p>
+          <ul>
+            <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+            <li><a href="http://www.gettyicons.com/free-icon/101/christmas-icon-set/">Icon Shock Christmas Set</a></li>
+          </ul>
+        </div>
       </div>
-
 
       <script src="/javascripts/jquery-1.8.3.min.js"></script>
       <script src="/javascripts/jquery.fitvids.js"></script>
@@ -186,6 +195,7 @@
           // Target your .container, .wrapper, .post, etc.
           $(".jumbotron").fitVids();
           $(".jumbotron h1").fitText();
+          $("body").css( 'padding', '0' ); // Overide Bootstrap
         });
       </script>
     </div> <!-- /container -->
