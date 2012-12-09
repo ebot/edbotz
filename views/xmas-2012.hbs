@@ -9,7 +9,7 @@
 
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-      body, html { padding: 0; margin: 0 }
+      body, html { padding: 0; margin: 0; }
 
       .color { margin: 0; padding: 5px; }
       .red { background: #990900 url('/images/noise.png'); color: white; }
@@ -39,7 +39,6 @@
       }
 
       .list_container {
-        margin: 10px auto;
         text-align: center;
       }
 
@@ -71,12 +70,12 @@
       .clear { clear: both; }
 
       .footer {
-        padding-bottom: 40px;
-        padding-top: 20px;
+        padding: 20px 8px 40px 8px;
       }
 
       /** Fix the polaroid frames on iPhones **/
-      @media only screen and (max-width: 479px) {
+      @media only screen and (min-width: 480px) and (max-width: 767px),
+      only screen and (max-width: 479px) {
         #decoration {
           display: none;
         }
@@ -118,9 +117,9 @@
         </div>
       </div>
 
-      <div class="color green">
+      <div class="color green list_container">
 
-        <div class="container-narrow list_container">
+        <div class="container-narrow">
           <h3>Our Top Five Videos</h3>
           <p>We wasted many hours watching videos, but these are our top five videos of 2012.</p>
 
@@ -219,7 +218,7 @@
         </div>
       </div>
 
-      <div class="footer brown">
+      <div class="color brown footer">
         <div class="container-narrow">
           <p>&copy; KayLou Dsigns 2012</p>
           <p>Graciously hosted by <a href='/'>Dad</a> and build with help from the following tools:</p>
@@ -239,6 +238,7 @@
           $(".movie").fitVids();
           $(".movie h1").fitText();
           $("body").css( 'padding', '0' ); // Overide Bootstrap
+          $("body").css( 'margin', '0' ); // Overide Bootstrap
         });
       </script>
     </div> <!-- /container -->
