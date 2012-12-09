@@ -40,6 +40,7 @@
 
       .list_container {
         margin: 10px auto;
+        text-align: center;
       }
 
       .list {
@@ -79,10 +80,15 @@
         #decoration {
           display: none;
         }
+
         .picture {
           max-width: 300px;
           height: 100%;
           float: none;
+        }
+
+        .list_container p {
+          text-align: left;
         }
       }
 
@@ -105,7 +111,7 @@
   <body class="color red">
       <div class="movie">
         <div class="container-narrow">
-          <h1>Merry Christmas!</h1>
+          <h1>Happy Christmas!</h1>
           <br />
           <br />
           <iframe width="640" height="360" src="http://www.youtube.com/embed/h4EK2bskN3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
@@ -114,11 +120,11 @@
 
       <div class="color green">
 
-        <div class="container-narrow">
-          <h4>Our Top Five Videos</h4>
-          <p>Our favorite videos of 2012.</p>
+        <div class="container-narrow list_container">
+          <h3>Our Top Five Videos</h3>
+          <p>We wasted many hours watching videos, but these are our top five videos of 2012.</p>
 
-          <div class="row-fluid list_container">
+          <div class="row-fluid">
             <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
               <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
@@ -142,10 +148,10 @@
 
           <hr />
 
-          <h4>Our Top Five Web Sites</h4>
-          <p>We had the most fun this year wasting time on these web sites.</p>
+          <h3>Our Top Five Web Sites</h3>
+          <p>We had the most fun this year wasting time on these web sites in 2012.</p>
 
-          <div class="row-fluid list_container">
+          <div class="row-fluid">
             <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
               <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
@@ -174,7 +180,7 @@
         <div class="container-narrow">
 
           <h3>Our Favorite Memories of 2012</h3>
-          <p>We had lots of fun this year, but a fw moments stick out.</p>
+          <p>We did lots of fun this year, but a few moments really stand out.</p>
 
           <ul>
             <li class="picture">
