@@ -7,42 +7,50 @@
     <meta name="description" content="Botzum 2012 Christmas Card">
     <meta name="author" content="K-Lou">
 
-    <!-- Le styles -->
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body, html { padding: 0; margin: 0 }
 
-      /* Custom container */
       .color { margin: 0; padding: 5px; }
-      .red { background: #990900; color: white; }
-      .green { background: #336633; color: white }
-      .yellow { background: #FFFF99; color: black; }
-      .brown { background: #996633; }
+      .red { background: #990900 url('/images/noise.png'); color: white; }
+      .yellow { background: #FFFF99 url('/images/noise.png'); color: black; }
+      .brown { background: #996633 url('/images/noise.png'); }
+      .green { background: #336633 url('/images/noise.png'); color: white }
+      .green a, .brown a { color: #FFFFFF; }
+      .green a:hover, .brown a:hover { color: #CCCCCC; }
+
+      h4 { text-size: 125%; }
 
       .container-narrow {
         margin: 0 auto;
         max-width: 700px;
       }
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        padding-top: 20px;
+      .movie {
+        padding: 20px 2px 0 2px;
         margin: 60px 0;
         text-align: center;
       }
-      .jumbotron h1 {
+      .movie h1 {
         font-size: 72px;
         line-height: 1;
         display: inline-block;
         width: 100%;
       }
-      .jumbotron div {
-        padding: 6px;
+
+      .list_container {
+        margin: 10px auto;
       }
 
-      /* Supporting marketing content */
-      .marketing {
-        padding: 60px 0;
+      .list {
+        text-align: center;
+      }
+      .list ol {
+        display: inline-block;
+        text-align: left;
+      }
+      .list li {
+        margin-top: 2px;
       }
 
       #pictures p {
@@ -51,6 +59,17 @@
 
       .footer {
         padding-bottom: 40px;
+        padding-top: 20px;
+      }
+
+      /** Fix the polaroid frames on iPhones **/
+      @media only screen and (max-width: 479px) {
+        .img-polaroid {
+          padding: 0
+        }
+        #decoration {
+          display: none;
+        }
       }
 
     </style>
@@ -70,7 +89,7 @@
   </head>
 
   <body class="color red">
-      <div class="jumbotron">
+      <div class="movie">
         <div class="container-narrow">
           <h1>Merry Christmas!</h1>
           <br />
@@ -85,8 +104,8 @@
           <h4>Our Top Five Videos</h4>
           <p>Our favorite videos of 2012.</p>
 
-          <div class="row-fluid marketing">
-            <div class="span3">
+          <div class="row-fluid list_container">
+            <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
               <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
             </div>
@@ -101,17 +120,19 @@
               </ol>
             </div>
 
-            <div class="span3">
+            <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
               <p><small>Kayla and Mom at Walt Disney World.</small></p>
             </div>
           </div>
 
+          <hr />
+
           <h4>Our Top Five Web Sites</h4>
           <p>We had the most fun this year wasting time on these web sites.</p>
 
-          <div class="row-fluid marketing">
-            <div class="span3">
+          <div class="row-fluid list_container">
+            <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
               <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
             </div>
@@ -126,7 +147,7 @@
               </ol>
             </div>
 
-            <div class="span3">
+            <div id="decoration" class="span3">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
               <p><small>Kayla and Mom at Walt Disney World.</small></p>
             </div>
@@ -178,7 +199,7 @@
 
       <div class="footer brown">
         <div class="container-narrow">
-          <p>&copy; KayLou 2012</p>
+          <p>&copy; KayLou Dsigns 2012</p>
           <p>Graciously hosted by <a href='/'>Dad</a> and build with help from the following tools:</p>
           <ul>
             <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
@@ -193,8 +214,8 @@
       <script>
         $(document).ready(function(){
           // Target your .container, .wrapper, .post, etc.
-          $(".jumbotron").fitVids();
-          $(".jumbotron h1").fitText();
+          $(".movie").fitVids();
+          $(".movie h1").fitText();
           $("body").css( 'padding', '0' ); // Overide Bootstrap
         });
       </script>
