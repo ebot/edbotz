@@ -11,15 +11,13 @@
     <style type="text/css">
       body, html { padding: 0; margin: 0; }
 
-      .color { margin: 0; padding: 5px; }
+      .color { margin: 0; padding: 5px 0 5px 0; }
       .red { background: #990900 url('/images/noise.png'); color: white; }
       .yellow { background: #FFFF99 url('/images/noise.png'); color: black; }
       .brown { background: #996633 url('/images/noise.png'); }
       .green { background: #336633 url('/images/noise.png'); color: white }
       .green a, .brown a { color: #FFFFFF; }
       .green a:hover, .brown a:hover { color: #CCCCCC; }
-
-      h4 { text-size: 125%; }
 
       .container-narrow {
         margin: 0 auto;
@@ -38,9 +36,11 @@
         width: 100%;
       }
 
-      .list_container {
+      .list-container {
         text-align: center;
+        padding: 10px 8px 20px 8px;
       }
+      .list-container p { padding-bottom: 12px; }
 
       .list {
         text-align: center;
@@ -50,10 +50,13 @@
         text-align: left;
       }
       .list li {
-        margin-top: 2px;
+        margin-top: 6px;
       }
 
-      #pictures { text-align: center; }
+      #pictures {
+        text-align: center;
+        clear: both;
+      }
       #pictures ul { 
         display: inline-block;
         margin: 0 30px auto;
@@ -67,10 +70,33 @@
         height: 250px;
       }
 
-      .clear { clear: both; }
-
       .footer {
         padding: 20px 8px 40px 8px;
+      }
+
+      .rotate-right {
+        /*General*/
+        transform: rotate(5deg);
+        /*Firefox*/
+        -moz-transform: rotate(5deg);
+        /*Microsoft Internet Explorer*/
+        -ms-transform: rotate(5deg);
+        /*Chrome, Safari*/
+        -webkit-transform: rotate(5deg);
+        /*Opera*/
+        -o-transform: rotate(5deg);
+      }
+      .rotate-left {
+        /*General*/
+        transform: rotate(-5deg);
+        /*Firefox*/
+        -moz-transform: rotate(-5deg);
+        /*Microsoft Internet Explorer*/
+        -ms-transform: rotate(-5deg);
+        /*Chrome, Safari*/
+        -webkit-transform: rotate(-5deg);
+        /*Opera*/
+        -o-transform: rotate(-5deg);
       }
 
       /** Fix the polaroid frames on iPhones **/
@@ -88,6 +114,12 @@
 
         .list_container p {
           text-align: left;
+        }
+
+        #pictures h3 {
+          line-height: 1;
+          display: inline-block;
+          width: 100%;
         }
       }
 
@@ -117,16 +149,16 @@
         </div>
       </div>
 
-      <div class="color green list_container">
+      <div class="color green list-container">
 
         <div class="container-narrow">
           <h3>Our Top Five Videos</h3>
           <p>We wasted many hours watching videos, but these are our top five videos of 2012.</p>
 
           <div class="row-fluid">
-            <div id="decoration" class="span3">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-              <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+            <div id="decoration" class="span3 rotate-left">
+              <img class="img-rounded" src="http://farm9.staticflickr.com/8316/8023538289_43c779ca55.jpg" />
+              <p><small>K-Wow in Disney</small></p>
             </div>
 
             <div class="span6 list">
@@ -139,9 +171,9 @@
               </ol>
             </div>
 
-            <div id="decoration" class="span3">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+            <div id="decoration" class="span3 rotate-right">
+              <img class="img-rounded" src="http://farm9.staticflickr.com/8490/8204676650_9d12d9d87b.jpg" />
+              <p><small>Little Turkey</small></p>
             </div>
           </div>
 
@@ -151,9 +183,9 @@
           <p>We had the most fun this year wasting time on these web sites in 2012.</p>
 
           <div class="row-fluid">
-            <div id="decoration" class="span3">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-              <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+            <div id="decoration" class="span3 rotate-left">
+              <img class="img-rounded" src="http://farm9.staticflickr.com/8311/7946399526_134a05a807.jpg" />
+              <p><small>Venus &amp; Serena</small></p>
             </div>
 
             <div class="span6 list">
@@ -166,9 +198,9 @@
               </ol>
             </div>
 
-            <div id="decoration" class="span3">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+            <div id="decoration" class="span3 rotate-right">
+              <img class="img-rounded" src="http://farm9.staticflickr.com/8306/7834994614_a4e3ac9702.jpg" />
+              <p><small>Hangin at the Fair</small></p>
             </div>
           </div>
         </div>
@@ -189,39 +221,128 @@
 
             <li class="picture">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8322/8045539654_96c858e438.jpg" />
-              <p><small>Lindsey in Walt Disney World.</small></p>
+              <p><small>Lindsey in Disney World</small></p>
             </li>
 
             <li class="picture">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+              <p><small>Kayla &amp; Mom at Disney World</small></p>
+            </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8302/7762834148_2e1eb8c6a2.jpg" />
+              <p><small>Cape May</small></p>
             </li>
 
             <li class="picture">
               <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-              <p><small>Hiking the McKaig trail.</small></p>
+              <p><small>Hiking the McKaig trail</small></p>
             </li>
 
             <li class="picture">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-              <p><small>Hiking the McKaig trail.</small></p>
+              <img class="img-polaroid" src="http://farm8.staticflickr.com/7094/7346188480_e2d682c4b2.jpg" />
+              <p><small>First Holy Communion</small></p>
             </li>
 
             <li class="picture">
-              <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-              <p><small>Hiking the McKaig trail.</small></p>
+              <img class="img-polaroid" src="http://farm8.staticflickr.com/7232/7339807258_0a119d2902.jpg" />
+              <p><small>Cancun</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8171/8045519311_e73aea1c01.jpg" />
+              <p><small>Magic Carpet Ride</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm8.staticflickr.com/7221/7234845940_24f12bb10a.jpg" />
+              <p><small>First Game of the Season</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8317/8045531296_bf1962e583.jpg" />
+              <p><small>Fort Wilderness</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8171/8045519252_f8ea879159.jpg" />
+              <p><small>Main Street USA</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm6.staticflickr.com/5321/7053281821_fb60ca0da4.jpg" />
+              <p><small>The Jersey Shore</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8456/8045540904_3dd0958074.jpg" />
+              <p><small>Meeting Duffy</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8326/8106802361_de98826d4c.jpg" />
+              <p><small>The Beach</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8173/8045542950_08a60ce517.jpg" />
+              <p><small>World Travlers</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm8.staticflickr.com/7239/7160977717_1ed21b17db.jpg" />
+              <p><small>First Holy Communion</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8036/8045530483_ca637eedec.jpg" />
+              <p><small>Spooky Castle</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8031/8045528722_081ce41264.jpg" />
+              <p><small>Splashdown</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8182/8045527653_38c88159f1.jpg" />
+              <p><small>Trick or Treat</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8454/8045530794_fb8a6afe96.jpg" />
+              <p><small>Swimmers</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8318/8045522010_1e7881f000.jpg" />
+              <p><small>Meeting Eeyore</small></p>
+              </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8037/8045520116_d92c1f8818.jpg" />
+              <p><small>The Happiest Place on Earth</small></p>
+            </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8197/8233649840_fb765467ce.jpg" />
+              <p><small>First Day of School</small></p>
+            </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8165/7148197225_9d6ab7ef4a.jpg" />
+              <p><small>Silly Faces</small></p>
             </li>
 
           </ul>
-            <div class="clear"></div>
 
         </div>
       </div>
 
       <div class="color brown footer">
         <div class="container-narrow">
-          <p>&copy; KayLou Dsigns 2012</p>
-          <p>Graciously hosted by <a href='/'>Dad</a> and build with help from the following tools:</p>
+          <p>&copy; KayLou Designs 2012</p>
+          <p>Graciously hosted by <a href='/'>Dad</a> and built with help from the following tools:</p>
           <ul>
             <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
             <li><a href="http://www.gettyicons.com/free-icon/101/christmas-icon-set/">Icon Shock Christmas Set</a></li>
@@ -237,8 +358,12 @@
           // Target your .container, .wrapper, .post, etc.
           $(".movie").fitVids();
           $(".movie h1").fitText();
+
+          if(navigator.userAgent.match(/iPhone/i)) {
+            $("#pictures h3").fitText();
+          }
+
           $("body").css( 'padding', '0' ); // Overide Bootstrap
-          $("body").css( 'margin', '0' ); // Overide Bootstrap
         });
       </script>
     </div> <!-- /container -->
