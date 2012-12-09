@@ -53,9 +53,21 @@
         margin-top: 2px;
       }
 
-      #pictures p {
-        text-align: left;
+      #pictures { text-align: center; }
+      #pictures ul { 
+        display: inline-block;
+        margin: 0 30px auto;
       }
+
+      .picture {
+        float: left;
+        list-style:none;
+        max-width: 180px;
+        padding: 15px;
+        height: 250px;
+      }
+
+      .clear { clear: both; }
 
       .footer {
         padding-bottom: 40px;
@@ -64,11 +76,13 @@
 
       /** Fix the polaroid frames on iPhones **/
       @media only screen and (max-width: 479px) {
-        .img-polaroid {
-          padding: 0
-        }
         #decoration {
           display: none;
+        }
+        .picture {
+          max-width: 300px;
+          height: 100%;
+          float: none;
         }
       }
 
@@ -156,44 +170,46 @@
 
       </div>
 
-      <div id="pictures" class="row-fluid yellow">
+      <div id="pictures" class="color yellow">
         <div class="container-narrow">
-          <div class="span12">
-            <h3>Our Favorite Memories of 2012</h3>
-            <p>We had lots of fun this year, but a fw moments stick out.</p>
 
-            <div class="row-fluid">
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
-                <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
-              </div>
+          <h3>Our Favorite Memories of 2012</h3>
+          <p>We had lots of fun this year, but a fw moments stick out.</p>
 
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8322/8045539654_96c858e438.jpg" />
-                <p><small>Lindsey in Walt Disney World.</small></p>
-              </div>
+          <ul>
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8202/8233717444_46b969cc37.jpg" />
+              <p><small>The 2012 Philadelphia Thanksgiving Day Parade.</small></p>
+            </li>
 
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
-                <p><small>Kayla and Mom at Walt Disney World.</small></p>
-              </div>
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8322/8045539654_96c858e438.jpg" />
+              <p><small>Lindsey in Walt Disney World.</small></p>
+            </li>
 
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-                <p><small>Hiking the McKaig trail.</small></p>
-              </div>
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8458/8045532281_55fc70ea69.jpg" />
+              <p><small>Kayla and Mom at Walt Disney World.</small></p>
+            </li>
 
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-                <p><small>Hiking the McKaig trail.</small></p>
-              </div>
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+              <p><small>Hiking the McKaig trail.</small></p>
+            </li>
 
-              <div class=span3>
-                <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
-                <p><small>Hiking the McKaig trail.</small></p>
-              </div>
-            </div>
-          </div>
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+              <p><small>Hiking the McKaig trail.</small></p>
+            </li>
+
+            <li class="picture">
+              <img class="img-polaroid" src="http://farm9.staticflickr.com/8066/8232604935_6e299df7ba.jpg" />
+              <p><small>Hiking the McKaig trail.</small></p>
+            </li>
+
+          </ul>
+            <div class="clear"></div>
+
         </div>
       </div>
 
