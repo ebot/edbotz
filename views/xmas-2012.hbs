@@ -12,12 +12,21 @@
       body, html { padding: 0; margin: 0; }
 
       .color { margin: 0; padding: 5px 0 5px 0; }
-      .red { background: #990900 url('/images/noise.png'); color: white; }
+      .red { background: #A91602 url('/images/noise.png'); color: white; }
       .yellow { background: #FFFF99 url('/images/noise.png'); color: black; }
-      .brown { background: #996633 url('/images/noise.png'); }
+      .brown { background: #9D703E url('/images/noise.png'); }
       .green { background: #336633 url('/images/noise.png'); color: white }
-      .green a, .brown a { color: #FFFFFF; }
-      .green a:hover, .brown a:hover { color: #CCCCCC; }
+      .green a, .brown a {
+        color: #FFFFFF;
+        padding: 5px;
+      }
+      .green a:hover, .brown a:hover {
+        padding: 5px;
+        background-color: rgba(255, 255, 255, .2);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+      }
 
       .container-narrow {
         margin: 0 auto;
@@ -56,8 +65,9 @@
       #pictures {
         text-align: center;
         clear: both;
+        padding: 5px 5px 30px 5px;
       }
-      #pictures ul { 
+      #pictures ul {
         display: inline-block;
         margin: 0 30px auto;
       }
@@ -97,6 +107,18 @@
         -webkit-transform: rotate(-5deg);
         /*Opera*/
         -o-transform: rotate(-5deg);
+      }
+
+      .banner-red {
+        margin: -520px auto;
+        text-align: center;
+        width: 19%;
+      }
+
+      .banner-green {
+        margin: -490px auto;
+        text-align: center;
+        width: 18%;
       }
 
       /** Fix the polaroid frames on iPhones **/
@@ -140,20 +162,31 @@
   </head>
 
   <body class="color red">
-      <div class="movie">
-        <div class="container-narrow">
-          <h1>Happy Christmas!</h1>
-          <br />
-          <br />
-          <iframe width="640" height="360" src="http://www.youtube.com/embed/h4EK2bskN3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="movie clearfix">
+
+      <div class="container-narrow">
+        <h1>Happy Christmas!</h1>
+        <br />
+        <br />
+        <iframe width="640" height="360" src="http://www.youtube.com/embed/h4EK2bskN3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <img id="decoration" class="img-rounded" alt="Lindsey Family" src="/images/KayLou/lindsey_bottom.png" />
       </div>
+
+      <div id="decoration" class="pull-left banner-red">
+        <img class="img-rounded" alt="Lindseys Banner" src="/images/KayLou/lindsey_right.png" />
+      </div>
+      <div id="decoration" class="pull-right banner-red">
+        <img class="img-rounded" alt="Lindseys Love Banner" src="/images/KayLou/lindsey_right.png" />
+      </div>
+
+    </div>
 
       <div class="color green list-container">
 
         <div class="container-narrow">
           <h3>Our Top Five Videos</h3>
-          <p>We wasted many hours watching videos, but these are our top five videos of 2012.</p>
+          <p>We lost many hours watching videos, but these were the top five of 2012.</p>
 
           <div class="row-fluid">
             <div id="decoration" class="span3 rotate-left">
@@ -180,7 +213,7 @@
           <hr />
 
           <h3>Our Top Five Web Sites</h3>
-          <p>We had the most fun this year wasting time on these web sites in 2012.</p>
+          <p>We had lots of fun wasting time at these web sites in 2012.</p>
 
           <div class="row-fluid">
             <div id="decoration" class="span3 rotate-left">
@@ -203,15 +236,24 @@
               <p><small>Hangin at the Fair</small></p>
             </div>
           </div>
-        </div>
 
+        </div>
+      </div>
+      
+      <div style="text-align: center">
+        <div id="decoration" class="pull-left banner-green">
+          <img class="img-rounded" alt="Kayla Banner" src="/images/KayLou/kayla_banner.png" />
+        </div>
+        <div id="decoration" class="pull-right banner-green">
+          <img class="img-rounded" alt="Kayla Banner" src="/images/KayLou/kayla_banner.png" />
+        </div>
       </div>
 
       <div id="pictures" class="color yellow">
         <div class="container-narrow">
 
           <h3>Our Favorite Memories of 2012</h3>
-          <p>We did lots of fun this year, but a few moments really stand out.</p>
+          <p>We did lots of fun stuff this year, but a few moments really stand out.</p>
 
           <ul>
             <li class="picture">
