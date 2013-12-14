@@ -14,3 +14,7 @@ exports.philly4 = function(req, res){
 exports.xmas2012 = function(req, res){
   res.render('xmas-2012', { title: 'Merry Christmas & Happy New Year!', layout: false });
 };
+
+exports.xmas2013 = function(req, res){
+  res.render('xmas-2013', { title: 'Merry Christmas & Happy New Year!', layout: false });
+};

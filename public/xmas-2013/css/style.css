@@ -1,0 +1,39 @@
+html {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+body {
+  background-color: #018CB4;
+  color: white;
+}
+
+header {
+  text-align:center;
+}
+
+footer {
+  background-color: #78888F;
+  margin-bottom: -10px;
+  padding-bottom: 5px;
+}
+
+.top-5 {
+  text-align: center;
+}
+
+.top-5 h3 {
+  font-size: 150%;
+  text-align:center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: underline;
+  text-size: 110%
+}
