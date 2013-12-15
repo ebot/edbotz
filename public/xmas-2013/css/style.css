@@ -41,3 +41,20 @@ a:hover {
 #xmas-card {
   background: url('/xmas-2013/images/xmas_card/background.png');
 }
+
+.list {
+  text-align: center;
+}
+
+.list ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.list li {
+  margin-top: 6px;
+}
+
+#web_sites {
+  margin-left: -115px;
+}
