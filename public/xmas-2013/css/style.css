@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #018CB4;
+  background: #018CB4 url('/images/noise.png');
   color: white;
 }
 
@@ -36,4 +36,8 @@ a:hover {
 	color: white;
 	text-decoration: underline;
   text-size: 110%
+}
+
+#xmas-card {
+  background: url('/xmas-2013/images/xmas_card/background.png');
 }
