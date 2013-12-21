@@ -28,6 +28,20 @@ footer {
   text-align:center;
 }
 
+#photo_album h2 {
+  border-bottom: solid 1px white;
+  padding-bottom: 4px;
+  font-size: 225%;
+}
+
+/** Fix the header on iPhones **/
+@media only screen and (min-width: 480px) and (max-width: 767px),
+only screen and (max-width: 479px) {
+  #photo_album h2 {
+    font-size: 145%;
+    text-align: center;
+  }
+}
 a {
 	color: white;
 	text-decoration: none;
@@ -37,10 +51,6 @@ a:hover {
 	color: white;
 	text-decoration: underline;
   text-size: 110%
-}
-
-#xmas-card {
-  background: url('/xmas-2013/images/xmas_card/background.png');
 }
 
 .list {
