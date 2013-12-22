@@ -26,30 +26,24 @@ footer {
 .top-5 h3 {
   font-size: 150%;
   text-align:center;
+  border-bottom: solid 1px rgba(247,243,242,0.35);
+  padding: 10px 15px 5px 15px;
 }
 
 #photo_album h2 {
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgba(247,243,242,0.70);
   padding-bottom: 4px;
   font-size: 225%;
 }
 
-/** Fix the header on iPhones **/
-@media only screen and (min-width: 480px) and (max-width: 767px),
-only screen and (max-width: 479px) {
-  #photo_album h2 {
-    font-size: 145%;
-    text-align: center;
-  }
-}
 a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-	color: white;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
   text-size: 110%
 }
 
@@ -64,8 +58,39 @@ a:hover {
 
 .list li {
   margin-top: 6px;
+  font-size: 110%
 }
 
-#web_sites {
-  margin-left: -115px;
+.thumbnail  {
+  max-width: 340px;
+}
+
+/** Fix the header on iPhones **/
+@media only screen and (min-width: 480px) and (max-width: 767px),
+only screen and (max-width: 479px) {
+  #photo_album h2 {
+    font-size: 145%;
+    text-align: center;
+  }
+
+  .top-5 h3 {
+    font-size: 140%;
+    text-align:center;
+  }
+
+  .caption h3 {
+    font-size: 155%
+  }
+}
+
+/** Fix the header on iPads **/
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+  .top-5 h3 {
+    font-size: 125%;
+  }
+
+  .caption h3 {
+    font-size: 155%;
+    font-weight: bolder;
+  }
 }
