@@ -5,9 +5,11 @@ $(document).ready(function(){
 
   var photos = [
     { title: "Pocono Sleigh Ride", cap: "Our year started off with a near death sleigh ride.", url: "https://farm3.staticflickr.com/2840/11483647174_be4bc917bf_n.jpg" },
+    { title: "Lindsey's Concert", cap: "Lindsey's big violin concert.", url: "https://farm3.staticflickr.com/2892/11507451416_2d6e688e58_n.jpg" },
     { title: "Outside the White House", cap: "We had a blast in the nation's capital.", url: "https://farm4.staticflickr.com/3756/11483731746_2c2755724f_n.jpg" },
     { title: "Goat Races", cap: "There's no other experience like Sly Fox's Goat Races.", url: "https://farm4.staticflickr.com/3752/11483650084_4e1b4e0ed0_n.jpg" },
     { title: "Horshoe Trail", cap: "We spent lots of time hiking the trails of Valley Forge.", url: "https://farm8.staticflickr.com/7316/9109369203_6ab21c15b1_n.jpg" },
+    { title: "Kayla's Concert", cap: "Kayla's violin concert.", url: "https://farm4.staticflickr.com/3741/11507393745_92babec0d8_n.jpg" },
     { title: "Philadelphia Freedoms", cap: "We always have a great time at the Freedoms matches.", url: "https://farm3.staticflickr.com/2877/11483651044_e9145dbfa5_n.jpg" },
     { title: "Gettysburg", cap: "We learned all about the Civil War this year at Gettysburg.", url: "https://farm3.staticflickr.com/2841/11483631775_6a2f8b31ac_n.jpg" },
     { title: "Dingmans Falls", cap: "Visiting Aunt Becky in the Poconos is always fun.", url: "https://farm3.staticflickr.com/2852/11483736326_7e1e5d2454_n.jpg" },
@@ -23,6 +25,7 @@ $(document).ready(function(){
     { title: "Hiking Stony Man", cap: "We learned a lot about the Appalachian Mountains in Shenandoah.", url: "https://farm4.staticflickr.com/3711/11483662154_f768ddb46b_n.jpg" },
     { title: "Stony Man Overlook", cap: "The view from the peak of Stony Man in Shenandoah.", url: "https://farm4.staticflickr.com/3777/11483663634_34e5a0543a_n.jpg" },
     { title: "Shenandoah Black Bear", cap: "The highlight of our trip was watching a black bear climbing a tree.", url: "https://farm4.staticflickr.com/3695/10554088894_b55a96617f_n.jpg" },
+    { title: "Donnna & Ed", cap: "Donna and Ed on Skyline Drive.", url: "https://farm6.staticflickr.com/5498/11507452806_e62ace6197_n.jpg" },
     { title: "Lewis Falls", cap: "We hiked all the way down to the bottom of Lewis Falls in Shenandoah.", url: "https://farm6.staticflickr.com/5480/11483747656_63467b3ba1_n.jpg" },
     { title: "Wicked Lou", cap: "Lou all dressed up for Halloween.", url: "https://farm3.staticflickr.com/2807/11483639625_d89aed15f2_n.jpg" },
     { title: "Happy Hauntings", cap: "We got lots of candy with our cousins at Dutch Wonderland.", url: "https://farm8.staticflickr.com/7401/11483661214_692330a87f_n.jpg" },
