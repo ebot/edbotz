@@ -24,7 +24,7 @@ $(document).ready(function(){
     { title: "Skyline Drive", cap: "The main road that cuts through Shenandoah.", url: "https://farm4.staticflickr.com/3817/10528642356_7ffa62164c_n.jpg" },
     { title: "Hiking Stony Man", cap: "We learned a lot about the Appalachian Mountains in Shenandoah.", url: "https://farm4.staticflickr.com/3711/11483662154_f768ddb46b_n.jpg" },
     { title: "Stony Man Overlook", cap: "The view from the peak of Stony Man in Shenandoah.", url: "https://farm4.staticflickr.com/3777/11483663634_34e5a0543a_n.jpg" },
-    { title: "Shenandoah Black Bear", cap: "The highlight of our trip was watching a black bear climbing a tree.", url: "https://farm4.staticflickr.com/3695/10554088894_b55a96617f_n.jpg" },
+    { title: "Shenandoah Black Bear", cap: "The highlight of our trip was watching a black bear climbing a tree.", url: "https://farm4.staticflickr.com/3697/10554274503_d95e0b9f8f_n.jpg" },
     { title: "Donnna & Ed", cap: "Donna and Ed on Skyline Drive.", url: "https://farm6.staticflickr.com/5498/11507452806_e62ace6197_n.jpg" },
     { title: "Lewis Falls", cap: "We hiked all the way down to the bottom of Lewis Falls in Shenandoah.", url: "https://farm6.staticflickr.com/5480/11483747656_63467b3ba1_n.jpg" },
     { title: "Wicked Lou", cap: "Lou all dressed up for Halloween.", url: "https://farm3.staticflickr.com/2807/11483639625_d89aed15f2_n.jpg" },
