@@ -30,8 +30,10 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.get('/4for4', routes.philly4);
+app.get('/resume', routes.resume);
 app.get('/xmas-2012', routes.xmas2012);
 app.get('/xmas-2013', routes.xmas2013);
+app.get('/xmas-2014', routes.xmas2014);
 
 var port = process.env.PORT || 3000;
 
