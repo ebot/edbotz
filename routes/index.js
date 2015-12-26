@@ -26,3 +26,7 @@ exports.xmas2013 = function(req, res){
 exports.xmas2014 = function(req, res){
   res.render('xmas-2014', { title: 'Merry Christmas & Happy New Year!', layout: false });
 };
+
+exports.xmas2015 = function(req, res){
+  res.render('xmas-2015', { title: 'Merry Christmas & Happy New Year!', layout: false });
+};

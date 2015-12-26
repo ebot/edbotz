@@ -34,6 +34,7 @@ app.get('/resume', routes.resume);
 app.get('/xmas-2012', routes.xmas2012);
 app.get('/xmas-2013', routes.xmas2013);
 app.get('/xmas-2014', routes.xmas2014);
+app.get('/xmas-2015', routes.xmas2015);
 
 var port = process.env.PORT || 3000;
 
