@@ -5,11 +5,6 @@
   src: url(../fonts/Limelight.ttf); /* url of the font */
 }
 
-@font-face {
-  font-family: chunk_five; /* set name */
-  src: url(../fonts/ChunkFive-Regular.otf); /* url of the font */
-}
-
 :root {
   --def-header-footer-color: #d4b725;
   --def-header-footer-link-color: #0ab82d;
