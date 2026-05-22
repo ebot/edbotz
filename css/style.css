@@ -1,5 +1,15 @@
 @import "pico/pico.min.css";
 
+@font-face {
+  font-family: limelight; /* set name */
+  src: url(../fonts/Limelight.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: chunk_five; /* set name */
+  src: url(../fonts/ChunkFive-Regular.otf); /* url of the font */
+}
+
 :root {
   --def-header-footer-color: #d4b725;
   --def-header-footer-link-color: #0ab82d;
@@ -43,12 +53,13 @@ header.grid {
 header > div:has(h1) {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 0;
+  margin-bottom: -25px;
   padding-bottom: 0;
 }
 header > div > h1 {
+  font-family: limelight;
+  font-size: 4.75em;
   color: var(--header-footer-color);
-  font-size: 350%;
   margin-bottom: 0;
   padding-bottom: 0;
 }
