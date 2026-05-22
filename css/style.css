@@ -1,0 +1,79 @@
+@import "pico/pico.min.css";
+
+:root {
+  --def-header-footer-color: #d4b725;
+  --def-header-footer-link-color: #0ab82d;
+  --flyers-header-footer-color: #e65d02;
+  --flyers-header-footer-link-color: #f6a364;
+  --eagles-header-footer-color: #009a03;
+  --eagles-header-footer-link-color: #93dd9b;
+  --phils-header-footer-color: #ed0000;
+  --phils-header-footer-link-color: #f37e7e;
+  --sixers-header-footer-color: #4572f2;
+  --sixers-header-footer-link-color: #9bb4f7;
+  --july-4-header-footer-color: #d8bba6;
+  --july-4-header-footer-link-color: #d02a3c;
+  --header-footer-color: #d8bba6;
+  --header-footer-link-color: #d02a3c;
+}
+html, body {
+  margin: 0;
+  background-color: black;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main { flex: 1; background-color: var(--pico-background-color); }
+footer { margin-top: auto; }
+header, footer {
+  background-color: black;
+  color: var(--header-footer-color);
+}
+header {
+  border-bottom: 2px solid var(--header-footer-color);
+  width: 100%;
+}
+header.grid {
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+header > div:has(h1) {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+header > div > h1 {
+  color: var(--header-footer-color);
+  font-size: 350%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+footer > div:has(#built_by) {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+footer > div > a {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  text-decoration: none;
+  color:  var(--header-footer-link-color);
+}
+footer > div > a:hover {
+  cursor: pointer !important;
+  text-decoration: underline;
+  color: var(--header-footer-link-color);
+}
+article > img {
+  display: block;
+  margin: auto;
+  width: 72%;
+}
+#version {
+  margin-top: 7px;
+  margin-left: 30%;
+}
