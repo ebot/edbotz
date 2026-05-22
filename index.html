@@ -4,17 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
+
+    <meta name="description" content="The personal web site of Ed Botzum">
+    <meta name="author" content="Ed Botzum">
+
+    <title>edbotz - crafting code since 1998</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
     <link rel="stylesheet" href="css/pico/pico.min.css">
     <style type="text/css">
       :root {
+        --july4-header-footer-color: #d4b725;
+        --july4-header-footer-link-color: #0ab82d;
+        --flyers-header-footer-color: #e65d02;
+        --flyers-header-footer-link-color: #f6a364;
+        --eagles-header-footer-color: #009a03;
+        --eagles-header-footer-link-color: #93dd9b;
+        --phils-header-footer-color: #ed0000;
+        --phils-header-footer-link-color: #f37e7e;
+        --sixers-header-footer-color: #4572f2;
+        --sixers-header-footer-link-color: #9bb4f7;
         --header-footer-color: #d4b725;
+        --header-footer-link-color: #0ab82d;
       }
       html, body {
         margin: 0;
         background-color: black;
         height: 100%;
       }
-      main { background-color: var(--pico-background-color); }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main { flex: 1; background-color: var(--pico-background-color); }
+      footer { margin-top: auto; }
       header, footer {
         background-color: black;
         color: var(--header-footer-color);
@@ -23,31 +51,97 @@
         border-bottom: 2px solid var(--header-footer-color);
         width: 100%;
       }
-      header.grid{ margin-bottom: 0; padding-bottom:0; }
+      header.grid {
+        margin-bottom: 0;
+        padding-bottom:0;
+      }
+      header > div:has(h1) {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
       header > div > h1 {
         color: var(--header-footer-color);
         font-size: 350%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      footer > div:has(#built_by) {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      footer > div > a {
+        cursor: pointer !important;
+        pointer-events: auto !important;
+        text-decoration: none;
+        color:  var(--header-footer-link-color);
+      }
+      footer > div > a:hover {
+        cursor: pointer !important;
+        text-decoration: underline;
+        color: var(--header-footer-link-color);
+      }
+      article > img {
+        display: block;
+        margin: auto;
+        width: 72%;
+      }
+      #version {
+        margin-top: 7px;
+        margin-left: 30%;
       }
     </style>
-    <title>edbotz.us</title>
   </head>
   <body>
     <header class="grid">
-      <div><img src="images/headers/july_4_header.png" width="450px"/></div>
+      <div><img src="images/headers/philly_header.png" width="450px"/></div>
       <div><h1 class="title">EdBotz</h1></div>
     </header>
-    <main class="container-fluid grid">
-      <div class="container">
-        <h1>Content Here</h1>
+    <main class="container-fluid">
+      <div class="container grid">
+        <div>
+          <article>
+            <header>About Me</header>
+            I am a 4 for 4 programmer focusing on database, ruby, and elixir development.
+            <br />
+            <br />
+            <a href="images/4for4/four_4_four-mac.jpg" target="new">
+              <img src="images/4for4/4for4_preview.jpg" alt="4for4 preview" />
+            </a>
+          </article>
+        </div>
+        <div>
+          <article>
+            <header>Code</header>
+            My code on <a href="https://github.com//ebot">Github</a>.
+            <br />
+            <br />
+            <img src="images/site_logos/gh_green.png" width="70%" alt="GitHub Logo" />
+          </article>
+        </div>
+        <div>
+          <article>
+            <header>Photos</header>
+            My photos are on <a href="https://www.flickr.com/photos/ebot/">flickr</a>.
+            <br />
+            <br />
+            <img src="images/site_logos/flickr.png" width="70%" alt="GitHub Logo" />
+          </article>
+        </div>
       </div>
     </main>
     <footer class="container grid">
       <div>
         <img src="images/keystone_shadow.png" width="95px" height="95px" alt="keystone shadow">
+        <div id="built_by">
         Built by Ed Botzum <br>
         Crafting code since 1998
+        </div>
       </div>
-      <div>
+      <div></div>
+      <div id="version">
         Version 4.0 ~ Est 2026<br>
         Previous Versions: <a href="http://www.flickr.com/photos/ebot/8167716204">3.0</a> <a href="http://www.flickr.com/photos/ebot/8167716204">2.0</a>
       </div>
