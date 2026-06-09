@@ -76,26 +76,26 @@
         Previous Versions: <a href="https://www.flickr.com/photos/ebot/55288878480">3.0</a> <a href="http://www.flickr.com/photos/ebot/8167716204">2.0</a>
       </div>
     </footer>
-    <script>
-      const now = new Date();
-      const md = (now.getMonth() + 1) * 100 + now.getDate();
-      let src = "images/headers/philly_header.png";
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const headerImg = document.getElementById('skyline');
 
-      if (md >= 101 && md <= 215) {
-        src = "images/headers/eagles_header.png";
-      } else if (md >= 325 && md <= 410) {
-        src = "images/headers/phillies_header.png";
-      } else if (md >= 415 && md < 615) {
-        src = "images/headers/flyers_header.png";
-      } else if (md >= 615 && md <= 710) {
-        src = "images/headers/july_4_header.png";
-      } else if (md >= 830 && md < 915) {
-        src = "images/headers/eagles_header.png";
-      } else if (md >= 915 && md <= 1101) {
-        src = "images/headers/phillies_header.png";
-      }
+    const now = new Date();
+    const dateCode = (now.getMonth() + 1) * 100 + now.getDate();
 
-      document.getElementById("skyline").src = src;
-    </script>
+    const ranges = [
+      { min: 101,  max: 215,  img: 'eagles_header.png' },
+      { min: 325,  max: 410,  img: 'phillies_header.png' },
+      { min: 415,  max: 614,  img: 'flyers_header.png' },
+      { min: 615,  max: 710,  img: 'july_4_header.png' },
+      { min: 830,  max: 914,  img: 'eagles_header.png' },
+      { min: 915,  max: 1101, img: 'phillies_header.png' },
+    ];
+
+    const match = ranges.find(r => dateCode >= r.min && dateCode <= r.max);
+    const base = 'images/headers/';
+    headerImg.src = match?.img ? base + match.img : base + 'philly_header.png';
+  });
+  </script>
   </body>
 </html>
