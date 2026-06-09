@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="grid">
-      <div><img src="images/headers/philly_header.png" width="450px"/></div>
+      <div><img id="skyline" src="images/headers/philly_header.png" width="450px"/></div>
       <div><h1 class="title">EdBotz</h1></div>
     </header>
 
@@ -76,5 +76,26 @@
         Previous Versions: <a href="https://www.flickr.com/photos/ebot/55288878480">3.0</a> <a href="http://www.flickr.com/photos/ebot/8167716204">2.0</a>
       </div>
     </footer>
+    <script>
+      const now = new Date();
+      const md = (now.getMonth() + 1) * 100 + now.getDate();
+      let src = "images/headers/philly_header.png";
+
+      if (md >= 101 && md <= 215) {
+        src = "images/headers/eagles_header.png";
+      } else if (md >= 325 && md <= 410) {
+        src = "images/headers/phillies_header.png";
+      } else if (md >= 415 && md < 615) {
+        src = "images/headers/flyers_header.png";
+      } else if (md >= 615 && md <= 710) {
+        src = "images/headers/july_4_header.png";
+      } else if (md >= 830 && md < 915) {
+        src = "images/headers/eagles_header.png";
+      } else if (md >= 915 && md <= 1101) {
+        src = "images/headers/phillies_header.png";
+      }
+
+      document.getElementById("skyline").src = src;
+    </script>
   </body>
 </html>
